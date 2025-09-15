@@ -1,22 +1,22 @@
-# Prontuário Enfermagem - Backend
+# 🩺 Prontuário de Enfermagem – Frontend
 
-## 🚀 Deploy no Render
+Frontend em React para autenticação e uso do sistema de prontuário.
 
-1. Crie um repositório no GitHub e suba este projeto.
-2. No painel do Render:
-   - New → Web Service → conectar ao GitHub.
-   - Escolha a branch `main`.
-   - Build Command: `npm install`
-   - Start Command: `node src/app.js`
-3. Crie também um banco de dados PostgreSQL no Render.
-4. Configure as variáveis de ambiente:
-   - `DATABASE_URL` (Render fornece)
-   - `JWT_SECRET` (defina algo seguro)
-5. Após o deploy, rode o seed para criar o admin:
-   ```bash
-   npm run seed
-   ```
+## 🚀 Como rodar localmente
+```bash
+npm install
+npm run dev
+```
 
-### 🔑 Credenciais de teste
+Acesse: [http://localhost:5173](http://localhost:5173)
+
+## 🔗 Conectar com o Backend
+No arquivo `.env` configure a URL do backend:
+
+```
+VITE_API_URL=https://seu-backend-no-render.onrender.com
+```
+
+## 🔑 Login Inicial
 - Email: `admin@hospital.local`
 - Senha: `admin123`
